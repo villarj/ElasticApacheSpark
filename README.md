@@ -13,9 +13,11 @@ import os
 from pyspark import SparkContext, SparkConf
 
 -- set environment variable PYSPARK_SUBMIT_ARGS
+
 os.environ['PYSPARK_SUBMIT_ARGS'] = '--jars path/to/.jar pyspark-shell'
 
 -- invoke SparkContext (using environment variable)
+
 sc = SparkContext(appName="PythonSparkStreaming")
 
 ## Leer información de ElasticSearch usando el conector elasticsearc-hadoop.
